@@ -55,11 +55,11 @@ app.delete('/api/notes/:id', (req, res)=>{
 
 // Display index.html when all other routes are accessed
 app.get('/', function(req,res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-});
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+}); 
 
 app.get('/notes', function(req,res) {
-    res.sendFile(path.join(__dirname, "../public/notes.html"));
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 
 // UpdateDB function
